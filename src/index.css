@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input {
+    @apply w-full rounded-full border border-stone-200 px-4 py-2
+    text-sm transition-all duration-300 placeholder:text-stone-400
+    focus:outline-none focus:ring focus:ring-yellow-400 md:px-6 md:py-3;
+  }
+  .loader {
+    --color-bar: linear-gradient(theme(colors.yellow.800) 0 0);
+    background-image: var(--color-bar), var(--color-bar), var(--color-bar);
+    background-position: 0% 50%, 50% 50%, 100% 50%;
+    background-repeat: no-repeat;
+    background-size: calc(33% - 5px) 50%;
+    width: 45px;
+    height: 60px;
+    animation: loader 1s infinite linear;
+  }
+  @keyframes loader {
+    20% { background-position: 0% 0%, 50% 50%, 100% 50%; }
+    40% { background-position: 0% 100%, 50% 0%, 100% 50%; }
+    60% { background-position: 0% 50%, 50% 100%, 100% 0%; }
+    80% { background-position: 0% 50%, 50% 50%, 100% 100%; }
+    100% { background-position: 0% 50%, 50% 50%, 100% 50%; }
+  }
+}
