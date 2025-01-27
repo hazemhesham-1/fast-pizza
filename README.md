@@ -1,6 +1,6 @@
 # Fast Pizza
 
-[Fast-Pizza](public/IMG-01.png)
+[Fast-Pizza](public/IMG-02.PNG)
 
 Fast Pizza is a Redux project where people can order pizza without authentication, and track their orders from restaurant to destination.
 
