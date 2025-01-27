@@ -1,8 +1,10 @@
 # Fast Pizza
 
+[Fast-Pizza](public/IMG-01.png)
+
 Fast Pizza is a Redux project where people can order pizza without authentication, and track their orders from restaurant to destination.
 
-## Project requirements from the business
+## Project Features
 
 - Online ordering web application, allowing users to order one or more pizzas from a menu.
 - No need for user accounts or logins: users just input their names before placing an order.
@@ -17,20 +19,16 @@ Fast Pizza is a Redux project where people can order pizza without authenticatio
 
 ## Technologies
 
-- React
-- Tailwindcss
-- React Router
-- Redux
+- Routing: [React Router](https://reactrouter.com/en/main)
+- Styling: [TailwindCSS](https://tailwindcss.com/)
+- Persist Remote State Management: [React Router](https://reactrouter.com/en/main/start/overview)
+- UI State Management: [Redux Toolkit](https://redux-toolkit.js.org/)
 
-[Back To The Top](#fast-react-pizza-co.)
-
----
+[Back To The Top](#fast-pizza)
 
 ## Getting Started
 
 To start the project, it is necessary to download the files from the github repository and after that run this commands:
 <br>`'npm i'` <br> `'npm run dev'`
 
-[Back To The Top](#fast-react-pizza-co.)
-
----
+[Back To The Top](#fast-pizza)
