@@ -1,6 +1,6 @@
-<div align="center">
-    <h1>🍕 Fast Pizza</h1>
-</div>
+<h1 align="center">
+    🍕 Fast Pizza
+</h1>
 
 
 <h2 align="center">
@@ -17,11 +17,10 @@
 </div>
 
 
-<p style="display: flex; align-items: center; justify-content: center;">
-    <img src="./public/assets/fast-pizza-homepage.png" alt="Fast-Pizza-Desktop-View" width="70%"/>
-    <img src="./public/assets/fast-pizza-mobile.png" alt="Fast-Pizza-Mobile-View" width="25%"/>
-</p>
-
+<div style="display: flex; align-items: center; justify-content: center; gap: 5px;">
+    <img src="./public/assets/fast-pizza-homepage.png" alt="Fast-Pizza-Desktop-View" height="350"/>
+    <img src="./public/assets/fast-pizza-mobile.png" alt="Fast-Pizza-Mobile-View" height="350"/>
+</div>
 
 
 ## 📋 Overview
@@ -29,33 +28,23 @@
 **Fast Pizza** is a Web Application built with Redux that allows users to order pizza quickly and easily — no authentication required. Just pick your pizzas, fill in your details, and track your order from the restaurant to your doorstep.
 
 
-
 ## 🔑 Project Features
 
-- **Mobile Responsive Design**
-Optimized layout and interactions for all screen sizes (phones, tablets, and desktops).
+- **Mobile Responsive Design**: Optimized layout and interactions for all screen sizes (phones, tablets, and desktops).
 
-- **Dynamic Pizza Menu**
-The menu is loaded from an API, so it's always up to date.
+- **Dynamic Pizza Menu**: The menu is loaded from an API, so it's always up to date.
 
-- **No Account Required**
-Users can place an order by simply entering their name, phone number, and address.
+- **No Account Required**: Users can place an order by simply entering their name, phone number, and address.
 
-- **Shopping Cart**
-Add one or more pizzas to the cart before checking out.
+- **Shopping Cart**: Add one or more pizzas to the cart before checking out.
 
-- **Priority Delivery Option**
-Users can mark their order as "priority" for faster delivery (20% extra charge).
+- **Priority Delivery Option**: Users can mark their order as "priority" for faster delivery (20% extra charge).
 
-- **GPS Support**
-Optionally include a GPS location to help the restaurant with delivery.
+- **GPS Support**: Optionally include a GPS location to help the restaurant with delivery.
 
-- **Track Your Order**
-After placing an order, users receive a unique order ID they can use to track their order status.
+- **Track Your Order**: After placing an order, users receive a unique order ID they can use to track their order status.
 
-- **Payment on Delivery**
-No online payment is handled in-app — users pay when the order is delivered.
-
+- **Payment on Delivery**: No online payment is handled in-app — users pay when the order is delivered.
 
 
 ## 🧭 How the App Works
@@ -66,7 +55,6 @@ The user sees a menu of pizzas to choose from.
 
 ![Pizza Menu](./public/assets/fast-pizza-menu.png)
 
----
 
 ### 2. Add to Cart
 
@@ -74,7 +62,6 @@ The user adds pizzas to his cart and proceeds to checkout.
 
 ![Shopping Cart](./public/assets/fast-pizza-cart.png)
 
----
 
 ### 3. Checkout
 
@@ -82,7 +69,6 @@ At checkout, the user enters his name, phone number, and address. GPS location i
 
 ![Checkout Screenshot](./public/assets/fast-pizza-checkout.png)
 
----
 
 ### 4. Order Confirmation
 
@@ -90,7 +76,6 @@ The app submits the order to the API. A unique order ID is returned and displaye
 
 ![Order Confirmation](./public/assets/fast-pizza-order.png)
 
----
 
 ### 5. Track the Order
 
@@ -111,9 +96,6 @@ Users can use their order ID to track its status from the restaurant to their ho
 - [React Router](https://reactrouter.com/) : Client-side routing for SPA navigation.
 
 - [Vite](https://vitejs.dev/) : Frontend build tool that improves the development.
-
-- **Netlify**: For Hosting and continuous deployment.
-
 
 
 ## 📦 Getting Started
