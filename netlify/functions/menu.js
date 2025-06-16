@@ -11,11 +11,16 @@ export async function handler(event) {
     }
 
     try {
-        const payload = await fetch(`${BASE_URL}/menu`);
-        const menuData = await payload.json();
+        const response = await fetch(`${BASE_URL}/menu`);
+        const menuData = await response.json();
 
         if(menuData.status !== "success") {
-            throw new Error("Failed to fetch");
+            const result = {
+                statusCode: 404,
+                body: JSON.stringify({ error: "404 Not Found" }),
+            };
+
+            return result;
         }
 
         const result = {

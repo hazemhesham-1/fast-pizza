@@ -8,13 +8,15 @@ export async function handler(event) {
         let orderData = {};
 
         if(method === "POST") {
-            orderData = await fetch(`${BASE_URL}/order`, {
+            const response = await fetch(`${BASE_URL}/order`, {
                 method: "POST",
                 body: event.body,
                 headers: {
                     "Content-Type": "application/json",
                 }
             });
+
+            orderData = await response.json();
         }
         else if((method === "GET") || (method === "PATCH")) {
             if(segments.length < 3) throw new Error("Order ID is missing!");
@@ -22,22 +24,34 @@ export async function handler(event) {
             const orderId = segments.pop();
 
             if(method === "GET") {
-                orderData = await fetch(`${BASE_URL}/order/${orderId}`);
+                const response = await fetch(`${BASE_URL}/order/${orderId}`);
+                orderData = await response.json();
             }
             else {
-                orderData = await fetch(`${BASE_URL}/order/${orderId}`, {
+                const response = await fetch(`${BASE_URL}/order/${orderId}`, {
                     method: "PATCH",
                     body: event.body,
                     headers: {
                         "Content-Type": "application/json",
                     }
                 });
+
+                orderData = await response.json();
             }
         }
         else {
             const result = {
                 statusCode: 405,
                 body: JSON.stringify({ error: "Method Not Allowed" }),
+            };
+
+            return result;
+        }
+
+        if(orderData.status !== "success") {
+            const result = {
+                statusCode: 404,
+                body: JSON.stringify({ error: "404 Not Found" }),
             };
 
             return result;

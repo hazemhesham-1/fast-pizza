@@ -5,7 +5,7 @@
 
 <h2 align="center">
 
-[Live Website](https://fast-pizza.netlify.app)
+[Live Website](https://fast-pizza-now.netlify.app/)
 
 </h2>
 
