@@ -17,7 +17,7 @@
 </div>
 
 
-<p style="display: flex; align-items: center; justify-content: center; gap: 5px;">
+<p>
     <img src="./public/assets/fast-pizza-homepage.png" alt="Fast-Pizza-Desktop-View" height="350"/>
     <img src="./public/assets/fast-pizza-mobile.png" alt="Fast-Pizza-Mobile-View" height="350"/>
 </p>
