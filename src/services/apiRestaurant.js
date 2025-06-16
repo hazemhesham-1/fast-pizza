@@ -1,63 +1,63 @@
-const API_URL = "https://react-fast-pizza-api.onrender.com/api";
-
 async function getMenu() {
     try {
-        const res = await fetch(`${API_URL}/menu`);
-        if(!res.ok) throw Error();
+        const res = await fetch("/api/menu");
+        if(!res.ok) throw new Error("Failed to fetch menu data");
 
         const { data } = await res.json();
         return data;
     }
     catch(err) {
-        throw new Error("Failed to fetch menu data");
+        console.error(err.message);
     }
 }
 
 async function getOrder(id) {
     try {
-        const res = await fetch(`${API_URL}/order/${id}`);
-        if(!res.ok) throw Error();
+        const res = await fetch(`/api/order/${id}`);
+        if(!res.ok) throw new Error(`Order #${id} was not found`);
 
         const { data } = await res.json();
         return data;
     }
     catch(err) {
-        throw new Error(`Order #${id} was not found`);
+        console.error(err.message);
     }
 }
 
 async function createOrder(newOrder) {
     try {
-        const res = await fetch(`${API_URL}/order`, {
+        const res = await fetch("/api/order", {
             method: "POST",
             body: JSON.stringify(newOrder),
             headers: {
                 "Content-Type": "application/json",
             }
         });
-        if(!res.ok) throw Error();
+
+        if(!res.ok) throw new Error("Failed to create new order");
 
         const { data } = await res.json();
         return data;
     }
     catch(err) {
-        throw new Error("Failed to create new order");
+        console.error(err.message);
     }
 }
 
 async function updateOrder(id, updatedData) {
     try {
-        const res = await fetch(`${API_URL}/order/${id}`, {
+        const res = await fetch(`/api/order/${id}`, {
             method: "PATCH",
             body: JSON.stringify(updatedData),
             headers: {
                 "Content-Type": "application/json",
             }
         });
-        if(!res.ok) throw Error();
+
+        if(!res.ok) throw new Error("Failed to update your order");
     }
     catch(err) {
-        throw new Error("Failed to update your order");
+        console.error(err.message);
     }
 }
 

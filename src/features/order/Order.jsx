@@ -1,13 +1,12 @@
+import { useEffect } from "react";
+import { useFetcher, useLoaderData } from "react-router-dom";
 import { calcMinutesLeft, formatCurrency, formatDateTime } from "../../utils/helpers";
 import { getOrder } from "../../services/apiRestaurant";
-import { useFetcher, useLoaderData } from "react-router-dom";
 import OrderItem from "./OrderItem";
-import { useEffect } from "react";
 import UpdateOrder from "./UpdateOrder";
 
 const Order = () => {
     const order = useLoaderData();
-
     const fetcher = useFetcher();
 
     useEffect(() => {
@@ -74,11 +73,11 @@ const Order = () => {
                 <p className="text-sm font-medium text-stone-700">
                     Price pizza: {formatCurrency(orderPrice)}
                 </p>
-                {priority &&
+                {priority && (
                     <p className="text-sm font-medium text-stone-700">
                         Price priority: {formatCurrency(priorityPrice)}
                     </p>
-                }
+                )}
                 <p className="font-bold">
                     To pay on delivery: {formatCurrency(totalPrice)}
                 </p>
@@ -91,6 +90,6 @@ const Order = () => {
 export async function loader({ params }) {
     const order = await getOrder(params.orderId);
     return order;
-}
+};
 
 export default Order;

@@ -24,6 +24,6 @@ const SearchOrder = () => {
             />
         </form>
     );
-}
+};
 
 export default SearchOrder;

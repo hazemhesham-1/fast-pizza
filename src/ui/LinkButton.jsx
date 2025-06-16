@@ -13,7 +13,9 @@ const LinkButton = ({ children, path }) => {
     }
 
     return (
-        <Link to={path} className={className}>{children}</Link>
+        <Link to={path} className={className}>
+            {children}
+        </Link>
     );
 }
 

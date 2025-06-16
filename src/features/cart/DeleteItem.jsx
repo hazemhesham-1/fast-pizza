@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
-import Button from "../../ui/Button";
 import { deleteItem } from "./cartSlice";
+import Button from "../../ui/Button";
 
 const DeleteItem = ({ id }) => {
     const dispatch = useDispatch();
@@ -10,6 +10,6 @@ const DeleteItem = ({ id }) => {
             Remove Item
         </Button>
     );
-}
+};
 
 export default DeleteItem;
