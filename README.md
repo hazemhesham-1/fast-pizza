@@ -18,8 +18,8 @@
 
 
 <p>
-    <img src="./public/assets/fast-pizza-homepage.png" alt="Fast-Pizza-Desktop-View" height="330"/>
-    <img src="./public/assets/fast-pizza-mobile.png" alt="Fast-Pizza-Mobile-View" height="330"/>
+    <img src="./public/assets/fast-pizza-homepage.png" alt="Fast-Pizza-Desktop-View" height="345"/>
+    <img src="./public/assets/fast-pizza-mobile.png" alt="Fast-Pizza-Mobile-View" height="345"/>
 </p>
 
 
