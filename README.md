@@ -3,11 +3,11 @@
 </div>
 
 
-<div align="center">
+<h2 align="center">
 
-![Live Website](https://fast-pizza.netlify.app)
+[Live Website](https://fast-pizza.netlify.app)
 
-</div>
+</h2>
 
 
 <div align="center">
@@ -17,10 +17,10 @@
 </div>
 
 
-<div style="display: flex; align-items: center; justify-content: center;">
+<p style="display: flex; align-items: center; justify-content: center;">
     <img src="./public/assets/fast-pizza-homepage.png" alt="Fast-Pizza-Desktop-View" width="70%"/>
     <img src="./public/assets/fast-pizza-mobile.png" alt="Fast-Pizza-Mobile-View" width="25%"/>
-</div>
+</p>
 
 
 
