@@ -5,19 +5,19 @@
 
 <div align="center">
 
-    ![Live Website](https://fast-pizza.netlify.app)
+![Live Website](https://fast-pizza.netlify.app)
 
 </div>
 
 
 <div align="center">
 
-    ![Status](https://img.shields.io/badge/Status-Completed-success?style=flat)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=flat)
 
 </div>
 
 
-<div align="center">
+<div style="display: flex; align-items: center; justify-content: center;">
     <img src="./public/assets/fast-pizza-homepage.png" alt="Fast-Pizza-Desktop-View" width="70%"/>
     <img src="./public/assets/fast-pizza-mobile.png" alt="Fast-Pizza-Mobile-View" width="25%"/>
 </div>
