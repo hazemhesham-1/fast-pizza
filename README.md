@@ -2,11 +2,13 @@
     <h1>🍕 Fast Pizza</h1>
 </div>
 
+
 <div align="center">
 
-    [Live Website](https://fast-pizza.netlify.app)
+    ![Live Website](https://fast-pizza.netlify.app)
 
 </div>
+
 
 <div align="center">
 
@@ -15,14 +17,17 @@
 </div>
 
 
-![Fast-Pizza](./public/assets/fast-pizza-homepage.png)
+<div align="center">
+    <img src="./public/assets/fast-pizza-homepage.png" alt="Fast-Pizza-Desktop-View" width="70%"/>
+    <img src="./public/assets/fast-pizza-mobile.png" alt="Fast-Pizza-Mobile-View" width="25%"/>
+</div>
 
-![Fast-Pizza-Mobile-View](./public/assets/fast-pizza-mobile.png)
 
 
 ## 📋 Overview
 
 **Fast Pizza** is a Web Application built with Redux that allows users to order pizza quickly and easily — no authentication required. Just pick your pizzas, fill in your details, and track your order from the restaurant to your doorstep.
+
 
 
 ## 🔑 Project Features
@@ -50,6 +55,7 @@ After placing an order, users receive a unique order ID they can use to track th
 
 - **Payment on Delivery**
 No online payment is handled in-app — users pay when the order is delivered.
+
 
 
 ## 🧭 How the App Works
@@ -92,7 +98,6 @@ Users can use their order ID to track its status from the restaurant to their ho
 
 ![Order Tracking](./public/assets/fast-pizza-tracking.png)
 
----
 
 
 ## 🛠️ Tech Stack
@@ -110,24 +115,25 @@ Users can use their order ID to track its status from the restaurant to their ho
 - **Netlify**: For Hosting and continuous deployment.
 
 
+
 ## 📦 Getting Started
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/hazemhesham-1/fast-pizza.git
-   ```
+    ```bash
+    git clone https://github.com/hazemhesham-1/fast-pizza.git
+    ```
 2. Navigate to the project directory:
-   ```bash
-   cd fast-pizza
-   ```
+    ```bash
+    cd fast-pizza
+    ```
 3. Install the dependencies:
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 4. Run the development server:
-   ```bash
-   npm run dev
-   ```
+    ```bash
+    npm run dev
+    ```
 5. Open your browser and navigate to [http://localhost:5173/](http://localhost:5173/).
 
 
