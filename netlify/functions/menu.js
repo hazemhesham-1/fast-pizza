@@ -11,11 +11,11 @@ export async function handler(event) {
     }
 
     try {
-        const res = await fetch(`${BASE_URL}/menu`);
+        const menuData = await fetch(`${BASE_URL}/menu`);
 
         const result = {
             statusCode: 200,
-            body: JSON.stringify(cities),
+            body: JSON.stringify(menuData),
         };
 
         return result;
